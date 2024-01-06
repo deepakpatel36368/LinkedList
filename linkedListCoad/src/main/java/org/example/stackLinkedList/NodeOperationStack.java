@@ -4,6 +4,8 @@ public class NodeOperationStack {
     Node head;
 
     int size ;
+
+    //Create Stack
     public void createStack(int value){
 
         head = new Node();
@@ -16,6 +18,7 @@ public class NodeOperationStack {
         head = node;
     }
 
+    //Push value on top of stack
     public void pushStack(int value){
 
         Node node = new Node();
@@ -25,12 +28,14 @@ public class NodeOperationStack {
         size++;
     }
 
+    // Delete value from top of stack
     public void popStack(){
         Node tempNode = head.next;
         head = tempNode;
         size--;
     }
 
+    // Traverse through stack
     public void traverseStack(){
         Node tempNode = head;
         for(int i=0; i<size; i++) {
