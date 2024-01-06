@@ -1,4 +1,4 @@
-package org.example;
+package org.example.SingleLinkList;
 
 public class Node {
     public Integer value;
